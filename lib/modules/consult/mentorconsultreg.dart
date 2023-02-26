@@ -9,7 +9,7 @@ class MentorReg extends StatefulWidget {
 
 class _MentorRegState extends State<MentorReg> {
    late String _firstname,_lastname,_email,_phone,_password,_cpassword;
-   var _selectedLocation ;
+  // var _selectedLocation ;
    final _formkey = GlobalKey<FormState>();
 
   @override
@@ -266,7 +266,7 @@ class _MentorRegState extends State<MentorReg> {
     SizedBox(
     height: 15,
     ),
-              Text(
+/*              Text(
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 19,
@@ -275,8 +275,8 @@ class _MentorRegState extends State<MentorReg> {
                   "Location: "),
               SizedBox(
                 height: 5,
-              ),
-    DropdownButton(
+              ),*/
+/*    DropdownButton(
       hint: Text("Choose your location"),
       isExpanded: true,
       items: ["Egypt", "UAE","USA","SY"].map((e) => DropdownMenuItem(child: Text("$e"),value: e,)).toList(),
@@ -287,7 +287,7 @@ class _MentorRegState extends State<MentorReg> {
       },
       value: _selectedLocation,
     ),
-      SizedBox(height: 7,),
+      SizedBox(height: 7,),*/
           Center(
             child: ElevatedButton(onPressed: () {
               if (_formkey.currentState!.validate()){
